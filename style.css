@@ -1,0 +1,68 @@
+/*************************** Variables*****************************/
+:root{
+    --primary:#000043;
+    --primary-shade:#0a0a1c;
+    
+    --secondary:#EFEFEF; 
+    --secondary-shade:#aaaaaa; 
+    --secondary-tint:#dabee6; 
+    
+    --tertiary: #FAB337;
+    --tertiary-shade:#9e732d;
+    --tertiary-tint:#3f3f3f;
+}
+
+.navbar{
+    background-color:var(--primary) ;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+   
+}   
+
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    gap:3rem;
+    align-items: center;
+}
+
+.navbar li{
+    margin: 0;
+ }
+ 
+.navbar li a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 60px;
+    font-weight: bolder;
+    white-space: nowrap;
+    margin: 0.5rem 2rem .5rem 1rem;
+}
+
+.navbar img{
+    height: 150px;
+    width: auto;
+    margin: 1.5rem -7rem .5rem -0.5rem;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0%;
+    padding:0%;
+}
+a:link{
+    color: var(--secondary);
+}
+
+a:visited{
+    color:var(--secondary-shade);
+}
+
+a:hover{
+    color: var(--tertiary-tint);
+}
+
+a:active{
+    color: var(--secondary-tint);
+}
