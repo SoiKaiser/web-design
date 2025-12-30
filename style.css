@@ -14,10 +14,10 @@
 
 .navbar{
     background-color:var(--primary) ;
-    height: 10rem;
+    height: 8rem;
     display: flex;
     align-items: center;
-   
+    
 }   
 
 .navbar ul{
@@ -29,8 +29,8 @@
 
 .navbar li{
     margin: 0;
- }
- 
+}
+
 .navbar li a {
     text-decoration: none;
     font-family: sans-serif;
@@ -41,7 +41,7 @@
 }
 
 .navbar img{
-    height: 150px;
+    height: 125px;
     width: auto;
     margin: 1.5rem -7rem .5rem -0.5rem;
 }
@@ -66,3 +66,77 @@ a:hover{
 a:active{
     color: var(--secondary-tint);
 }
+
+.bottom{
+    background-color: var(--primary);
+    height: 3rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: 20rem; 
+    color: var(--secondary);
+    font-size: 20px;
+}
+
+
+/**********************SLIDESHOW********************************/
+
+/* Slideshow */
+.slideshow-container {
+  width: 70%;
+  height: 480px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;      
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+}
+
+.Main-slides {
+  display: none;
+  height: 50%;
+}
+
+.Main-slides img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+/* Controls */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 20px;
+
+  font-size: 28px;
+  color: var(--secondary);
+  cursor: pointer;
+  background: rgba(0,0,0,0.4);
+}
+.prev { left: 0; }   
+.next { right: 0; }
+
+/* Text & dots */
+.text {
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  text-align: center;
+  color: var(--secondary);
+}
+
+.dot {
+  height: 33px;
+  width: 33px;
+  margin: 5px;
+  background: var(--tertiary);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active { background: var(--tertiary-shade); }
