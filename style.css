@@ -11,7 +11,7 @@
     --tertiary-shade:#9e732d;
     --tertiary-tint:#3f3f3f;
 }
-
+/****************************Navbar********************************/
 .navbar{
     background-color:var(--primary) ;
     height: 8rem;
@@ -67,19 +67,6 @@ a:active{
     color: var(--secondary-tint);
 }
 
-.bottom{
-    background-color: var(--primary);
-    height: 3rem;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    margin-top: 20rem; 
-    color: var(--secondary);
-    font-size: 20px;
-}
-
 
 /**********************SLIDESHOW********************************/
 
@@ -109,17 +96,27 @@ a:active{
 /* Controls */
 .prev, .next {
   position: absolute;
-  top: 50%;
+  top: 35%;
   transform: translateY(-50%);
-  padding: 20px;
+  padding: 10px 20px;
+  border-radius: 50%;
+
 
   font-size: 28px;
   color: var(--secondary);
   cursor: pointer;
-  background: rgba(0,0,0,0.4);
+  background: var(--tertiary);
+  margin: 0 5rem;
+  background-size: 5rem;
+  width: auto;
+  border-width: 5rem;
+
 }
+
+
 .prev { left: 0; }   
 .next { right: 0; }
+
 
 /* Text & dots */
 .text {
@@ -139,4 +136,49 @@ a:active{
   display: inline-block;
 }
 
+.button{
+  background-color: var(--primary);
+  border-radius: 25px;
+  max-width: 12rem;
+  margin: -1rem auto;
+
+}
+
 .active { background: var(--tertiary-shade); }
+
+/*************************PICS ON MAIN PAGE******************************/
+
+.pics {
+ display: flex;
+ 
+}
+
+.pics img{
+  width: 300px;
+  height: 300px;
+
+  margin: 5rem auto 0 auto;
+}
+
+
+/**********************************FOOTER**********************/
+.bottom{
+    background-color: var(--primary);
+    height: 3rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+    color: var(--secondary);
+    font-size: 20px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.bottom h1{
+  margin:auto; 
+}
