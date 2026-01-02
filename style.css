@@ -1,70 +1,70 @@
 /*************************** Variables*****************************/
 :root{
-    --primary:#000043;
-    --primary-shade:#0a0a1c;
-    
-    --secondary:#EFEFEF; 
-    --secondary-shade:#aaaaaa; 
-    --secondary-tint:#dabee6; 
-    
-    --tertiary: #FAB337;
-    --tertiary-shade:#9e732d;
-    --tertiary-tint:#3f3f3f;
+  --primary:#000043;
+  --primary-shade:#0a0a1c;
+  
+  --secondary:#EFEFEF; 
+  --secondary-shade:#aaaaaa; 
+  --secondary-tint:#dabee6; 
+  
+  --tertiary: #FAB337;
+  --tertiary-shade:#9e732d;
+  --tertiary-tint:#3f3f3f;
 }
 /****************************Navbar********************************/
 .navbar{
-    background-color:var(--primary) ;
-    height: 8rem;
-    display: flex;
-    align-items: center;
-    
+  background-color:var(--primary) ;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  
 }   
 
 .navbar ul{
-    display: flex;
-    list-style-type: none;
-    gap:3rem;
-    align-items: center;
+  display: flex;
+  list-style-type: none;
+  gap:3rem;
+  align-items: center;
 }
 
 .navbar li{
-    margin: 0;
+  margin: 0;
 }
 
 .navbar li a {
-    text-decoration: none;
-    font-family: sans-serif;
-    font-size: 60px;
-    font-weight: bolder;
-    white-space: nowrap;
-    margin: 0.5rem 2rem .5rem 1rem;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 60px;
+  font-weight: bolder;
+  white-space: nowrap;
+  margin: 0.5rem 2rem .5rem 1rem;
 }
 
 .navbar img{
-    height: 125px;
-    width: auto;
-    margin: 1.5rem -7rem .5rem -0.5rem;
+  height: 125px;
+  width: auto;
+  margin: 1.5rem -7rem .5rem -0.5rem;
 }
 
 *{
-    box-sizing: border-box;
-    margin:0%;
-    padding:0%;
+  box-sizing: border-box;
+  margin:0%;
+  padding:0%;
 }
 a:link{
-    color: var(--secondary);
+  color: var(--secondary);
 }
 
 a:visited{
-    color:var(--secondary-shade);
+  color:var(--secondary-shade);
 }
 
 a:hover{
-    color: var(--tertiary-tint);
+  color: var(--tertiary-tint);
 }
 
 a:active{
-    color: var(--secondary-tint);
+  color: var(--secondary-tint);
 }
 
 
@@ -100,8 +100,8 @@ a:active{
   transform: translateY(-50%);
   padding: 10px 20px;
   border-radius: 50%;
-
-
+  
+  
   font-size: 28px;
   color: var(--secondary);
   cursor: pointer;
@@ -110,7 +110,7 @@ a:active{
   background-size: 5rem;
   width: auto;
   border-width: 5rem;
-
+  
 }
 
 
@@ -141,7 +141,7 @@ a:active{
   border-radius: 25px;
   max-width: 12rem;
   margin: -1rem auto;
-
+  
 }
 
 .active { background: var(--tertiary-shade); }
@@ -149,36 +149,80 @@ a:active{
 /*************************PICS ON MAIN PAGE******************************/
 
 .pics {
- display: flex;
- 
+  display: flex;
+  
 }
 
 .pics img{
   width: 300px;
   height: 300px;
-
+  
   margin: 5rem auto 0 auto;
 }
 
 
 /**********************************FOOTER**********************/
 .bottom{
-    background-color: var(--primary);
-    height: 3rem;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    
-    color: var(--secondary);
-    font-size: 20px;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    margin-top: 5rem;
+  background-color: var(--primary);
+  height: 3rem;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+  color: var(--secondary);
+  font-size: 20px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  margin-top: 5rem;
 }
 
 .bottom h1{
   margin:auto; 
+}
+
+
+/*****************************ABOUT PAGE***************************/
+
+.container-top{
+  display: flex;
+}
+
+.comms{
+  display: flex;
+  background-color: var(--primary-shade);
+  height: auto;
+  width: 700px;
+  border-radius: 25px;
+}
+
+.comms ul {
+  margin: 2rem 2rem;
+  color: var(--secondary);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
+}
+
+.comms img{
+  height: 200px;
+  width: auto;
+  margin: 2rem 2rem ;
+  border-radius: 25px;
+}
+
+.cntr{
+  margin: 2.5rem auto;
+  font-family: sans-serif;
+  color: var(--tertiary-shade);
+  font-size: 20px;
+}
+
+.cntrb{
+  margin: 2.5rem auto;
+}
+
+body{
+  background-color: var(--secondary);
 }
