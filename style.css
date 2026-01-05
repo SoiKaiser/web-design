@@ -226,3 +226,54 @@ a:active{
 body{
   background-color: var(--secondary);
 }
+
+
+/***************************STAFF CONTACT PAGE**************************/
+
+.container-top-s{
+  display: flex;
+}
+
+.comms-s{
+  display: flex;
+  background-color: var(--primary-shade);
+  height: auto;
+  width: 700px;
+  border-radius: 25px;
+}
+
+.comms-s ul {
+  margin: auto;
+  color: var(--secondary);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  text-align: center;
+  list-style-type: none;
+}
+
+.comms-s img{
+  height: 200px;
+  width: auto;
+  margin: 2rem 2rem ;
+  border-radius: 25px;
+  
+}
+
+.cntr-s{
+  margin: 3rem auto;
+  font-family: sans-serif;
+  color: var(--tertiary-shade);
+  font-size: 20px;
+}
+
+.cntrb-s{
+  margin: 2.5rem auto;
+}
+
+body{
+  background-color: var(--secondary);
+}
+
+a:link {
+  text-decoration: none;
+}
