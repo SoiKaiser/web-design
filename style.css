@@ -10,11 +10,20 @@
   --tertiary: #FAB337;
   --tertiary-shade:#9e732d;
   --tertiary-tint:#3f3f3f;
+
+  --font-size: 20px;
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-primary { background-color: var(--primary); }
+
 /****************************Navbar********************************/
 .navbar{
   background-color:var(--primary) ;
-  height: 8rem;
   display: flex;
   align-items: center;
   
@@ -34,7 +43,7 @@
 .navbar li a {
   text-decoration: none;
   font-family: sans-serif;
-  font-size: 60px;
+  font-size: var(--font-size);
   font-weight: bolder;
   white-space: nowrap;
   margin: 0.5rem 2rem .5rem 1rem;
@@ -46,11 +55,6 @@
   margin: 1.5rem -7rem .5rem -0.5rem;
 }
 
-*{
-  box-sizing: border-box;
-  margin:0%;
-  padding:0%;
-}
 a:link{
   color: var(--secondary);
 }
@@ -72,7 +76,7 @@ a:active{
 
 /* Slideshow */
 .slideshow-container {
-  width: 70%;
+  width: 100%;
   height: 480px;
   position: relative;
   overflow: hidden;
@@ -96,21 +100,22 @@ a:active{
 /* Controls */
 .prev, .next {
   position: absolute;
-  top: 35%;
+  top: 50%;
   transform: translateY(-50%);
+
   padding: 10px 20px;
-  border-radius: 50%;
-  
-  
+  margin: 0 1rem;
+  border-width: 5rem;
+  border-radius: 50%;  
+
   font-size: 28px;
-  color: var(--secondary);
-  cursor: pointer;
+
   background: var(--tertiary);
-  margin: 0 5rem;
+  color: var(--secondary);
+
+  cursor: pointer;
   background-size: 5rem;
   width: auto;
-  border-width: 5rem;
-  
 }
 
 
@@ -140,7 +145,7 @@ a:active{
   background-color: var(--primary);
   border-radius: 25px;
   max-width: 12rem;
-  margin: -1rem auto;
+  margin: 1rem auto;
   
 }
 
@@ -148,14 +153,13 @@ a:active{
 
 /*************************PICS ON MAIN PAGE******************************/
 
-.pics {
-  display: flex;
-  
+.pics a {
+  display: block;
+  text-align: center;
 }
-
 .pics img{
-  width: 300px;
   height: 300px;
+  object-fit: cover;
   
   margin: 5rem auto 0 auto;
 }
@@ -164,7 +168,6 @@ a:active{
 /**********************************FOOTER**********************/
 .bottom{
   background-color: var(--primary);
-  height: 3rem;
   
   display: flex;
   align-items: center;
@@ -173,10 +176,9 @@ a:active{
   
   color: var(--secondary);
   font-size: 20px;
-  position: absolute;
-  bottom: 0px;
   width: 100%;
   margin-top: 5rem;
+  padding: 2rem;
 }
 
 .bottom h1{
@@ -194,7 +196,6 @@ a:active{
   display: flex;
   background-color: var(--primary-shade);
   height: auto;
-  width: 700px;
   border-radius: 25px;
 }
 
@@ -230,15 +231,10 @@ body{
 
 /***************************STAFF CONTACT PAGE**************************/
 
-.container-top-s{
-  display: flex;
-}
-
 .comms-s{
   display: flex;
   background-color: var(--primary-shade);
   height: auto;
-  width: 700px;
   border-radius: 25px;
 }
 
@@ -276,4 +272,26 @@ body{
 
 a:link {
   text-decoration: none;
+}
+
+/** HELLO **/
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.grid-2col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 1 fraction 1 fraction */
+  gap: 20px;
+}
+
+.grid-3col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 1 fraction 1 fraction */
+  gap: 20px;
+}
+
+.m-4 {
+  margin: 5rem;
 }

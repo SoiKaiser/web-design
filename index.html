@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar">
+    
+    <ul><li><a href="index.html"><img src="New_Logo4-1 (1).png" alt=""></a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="student.html">Student's Info</a></li>
+      <li><a href="staff.html">Staff Contact</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    
+  </div>
+  
+  
+  <div class="slideshow-container">
+    
+    <div class="mySlides fade">
+      <img src="APPBANNER_V2.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="Part-Time-Courses-MCAST-Web-Banner (1).jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="Web-Banner-10.jpg" style="width:100%">
+    </div>
+    
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  
+  <div class="button" style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  
+  
+  <div class="pics grid-3col">
+    <a href="#">
+      <img src="Artboard-11.jpg" alt="pic 1">
+      <h2>I am horse</h2>
+    </a>
+
+    <img src="mA-scaled.jpg" alt="pic 2">
+    <img src="Artboard-2-1-768x576.png" alt="pic 3">
+  </div>
+  
+  <footer class="bottom">
+    <h1>MCAST</h1>
+  </footer>
+  
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+</body>
+</html>
