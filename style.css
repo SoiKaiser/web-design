@@ -165,6 +165,8 @@ a:active{
 }
 
 
+
+
 /**********************************FOOTER**********************/
 .bottom{
   background-color: var(--primary);
@@ -294,4 +296,35 @@ a:link {
 
 .m-4 {
   margin: 5rem;
+}
+
+
+/****************************STUDENT INFO PAGE*****************************/
+
+.image img{
+  height: 15rem;
+  margin: 1rem 0rem 0rem 8.5rem;
+}
+
+.Sinfo {
+  margin: 1rem 0rem 0rem 5rem;
+  padding: 1.8rem;
+  background-color: var(--tertiary);
+  height: 30rem;
+  width: 25rem;
+  font-size: 180%;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.subject{
+  background-color: #FAB337;
+  height: 15rem;
+  width: 35rem;
+  margin: 2.5rem 5rem;
+  padding: 3rem 6rem;
+}
+.Sholder {
+  position: absolute;
+  right: 18rem;
+  top: 20rem;
 }
