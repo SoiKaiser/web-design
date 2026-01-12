@@ -10,7 +10,7 @@
   --tertiary: #FAB337;
   --tertiary-shade:#9e732d;
   --tertiary-tint:#3f3f3f;
-
+  
   --font-size: 20px;
 }
 * {
@@ -102,17 +102,17 @@ a:active{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-
+  
   padding: 10px 20px;
   margin: 0 1rem;
   border-width: 5rem;
   border-radius: 50%;  
-
+  
   font-size: 28px;
-
+  
   background: var(--tertiary);
   color: var(--secondary);
-
+  
   cursor: pointer;
   background-size: 5rem;
   width: auto;
@@ -327,4 +327,70 @@ a:link {
   position: absolute;
   right: 18rem;
   top: 20rem;
+}
+
+/**********************CONTACT US PAGE******************************/
+
+.contact-form{
+  width: 23rem;
+  margin: 2rem 0rem 0rem 10rem;
+  padding: 1rem;
+    background-color: var(--tertiary);
+
+}
+.contact-form label{
+  display: block;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select{
+  appearance: none;
+  
+  border-color: var(--tertiary-shade);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  
+  display: block;
+  width: 20rem;
+  
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2rem;
+  
+  padding: var(--space-1);
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form div{
+  margin: var(--space-1) 0;
+}
+
+.contact-form label {
+  font-size: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.main-pic img{
+  width: 40rem;
+  position: absolute;
+  right: 10rem;
+  top: 12rem;
+}
+
+.fb img{
+  width: 25rem;
+  position: absolute;
+  top: 43rem;
+  right: 31rem;
+}
+
+.email img{
+  width: 15rem;
+  position: absolute;
+  top: 43rem;
+  right: 10rem;
 }

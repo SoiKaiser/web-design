@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="navbar">
-
+        
         <ul><li><a href="index.html"><img src="assets/McastLogo4-1 (1).png" alt=""></a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="student.html">Student's Info</a></li>
@@ -17,9 +17,63 @@
         </ul>
         
     </div>
+    
+    
+    <form action="malito:info@coffee.com" method="post" enctype="text/plain" class="contact-form">
+        
+        <div>
+            <label for="input-topic">Topic:</label>
+            <select name="topic" id="input-topic" required>
+                <option value="" disabled selected> choose a topic</option>
+                <option value="Courses Information">Courses Information</option>
+                <option value="Registering as a new student">Registering as a new student</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="input-name">Name:</label>
+            <input type="text" name="name" id="input-name"
+            placeholder="Alex Abela"
+            required
+            minlength="4">
+        </div>
+        
+        <div>
+            <label for="input-email">Email:</label>
+            <input type="email" name="email" 
+            id="input-email"
+            placeholder="me@example.com"
+            required>
+        </div>
+        
+        <div>
+            <label for="input-message">Your Message:</label>
+            <textarea name="message" id="input-message"
+            placeholder="your message here..."
+            cols="30" rows="10"
+            required
+            minlength="20">
+        </textarea>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="reset" class="btn btn-secondary">Reset</button>
+</form>
 
-    <footer class="bottom">
-        <h1>MCAST</h1>
-    </footer>
+<div class="main-pic">
+    <img src="assets/mcast night campus.jpg" alt="main pic">
+    </div>
+
+    <div class="fb">
+    <img src="assets/facebook logo.png" alt="fb logo">
+    </div>
+    <div class="email">
+<img src="assets/email logo.png" alt="email pic">
+    </div>
+
+<footer class="bottom">
+    <h1>MCAST</h1>
+</footer>
 </body>
 </html>
