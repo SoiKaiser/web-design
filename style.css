@@ -323,11 +323,6 @@ a:link {
   margin: 2.5rem 5rem;
   padding: 3rem 6rem;
 }
-.Sholder {
-  position: absolute;
-  right: 18rem;
-  top: 20rem;
-}
 
 /**********************CONTACT US PAGE******************************/
 
@@ -394,3 +389,12 @@ a:link {
   top: 43rem;
   right: 10rem;
 }
+
+.btn {
+  padding: 10px;
+  background-color: var(--primary);
+  color: var(--secondary);
+  font-size: 25px;
+}
+
+
